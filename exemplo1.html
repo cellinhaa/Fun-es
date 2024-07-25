@@ -10,16 +10,24 @@
     <h2>Funções</h2>
     <p>Criar uma função que multiplica dois números e retorna 
         o resultado para a variável.</p>
-
+    <h2>Versão 2:</h2>
+    <p>O usuário vai digitar dois valores em caixas input, clicar no botão Multipicar e mostrar o resultado.</p>
     <p id="resultado" style="font-weight: bold;"></p>
 
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <button onclick="calcular()"> Multipicar </button>
+    
     <script>
-        let x = multiplica(4,5);
+        function calcular(){
+        let numero = document.getElementById("n1").value;
+        let numero2 = document.getElementById("n2").value;
+        let x = multiplica(numero,numero2);
         document.getElementById("resultado").innerHTML=x;
 
         function multiplica(a,b){
             return a*b;
-        }
+        }}
     </script>
 </body>
 </html>
