@@ -3,30 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 1</title>
+    <title>Exemplo 2</title>
 </head>
-<body>
-    <h1>Exemplo 1</h1>
+<body style="font-size: x-large;">
+    <h1>Exemplo 2</h1>
     <h2>Funções</h2>
-    <p>Criar uma função que multiplica dois números e retorna 
-        o resultado para a variável.</p>
-
+    <p>Criar uma função que multiplica dois números e retorna o resultado para uma variável.</p>
+    <p>Uma função pode ser armazenada em uma variável.</p>    
+    <p>Criar uma função que multiplica dois números e retorna o resultado para uma variável. Uma função pode ser armazenada em uma variável.</p> 
+    <p><b>Versão 2:</b> A variável vira uma função.</p>  
     <p id="resultado" style="font-weight: bold;"></p>
 
-    <input type="text" id="n1">
-    <input type="text" id="n2">
-    <button onclick="calcular()"> Multipicar </button>
-    
     <script>
-        function calcular(){
-        let numero = document.getElementById("n1")[0].value
-        let numero2 = document.getElementById("n2")[1].value
-        let x = multiplica(numero,numero2);
-        document.getElementById("resultado").innerHTML=x;
-
-        function multiplica(a,b){
-            return a*b;
-        }}
+        const x = function (a, b){return a*b;}
+        document.getElementById("resultado").innerHTML = x;
+        document.getElementById("resultado").innerHTML = x(5,6);
     </script>
 </body>
-</html>
+</html> 
